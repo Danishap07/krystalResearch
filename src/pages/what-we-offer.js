@@ -43,13 +43,13 @@ function WhatWeOffer() {
                     <p className='my-6 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>KOLs</p>
                 </div>
                 <div className='mx-4 md:ml-20 mt-4'>
-                    <Image src='/assets/doc1.png' width={1100} height={300} />
+                    <Image src='/assets/doc1.png' width={1100} height={300} alt='home doc'/>
                 </div>
             </div>
 
             <div className='md:flex justify-between md:mx-32 my-6'>
                 <div className='mx-4 md:ml-20 mt-4'>
-                    <Image src='/assets/doc2.png' width={1100} height={300} />
+                    <Image src='/assets/doc2.png' width={1100} height={300} alt='home doc'/>
                 </div>
                 <div className='md:w-[100%] mx-4 md:ml-12 '>
                     <h3 className='text-4xl font-semibold '>Quantitative</h3>
@@ -64,16 +64,16 @@ function WhatWeOffer() {
                 <h3 className='font-bold text-4xl text-center my-6'>Project Management:</h3>
                 <div className='md:flex md:justify-between my-6 md:mx-[10%]'>
                     <div className="md:w-[30%] flex">
-                        <Image className='w-9 h-10 my-7 pb-4 mx-6' src='/assets/project_marker.png' width={40} height={35} />
+                        <Image className='w-9 h-10 my-7 pb-4 mx-6' src='/assets/project_marker.png' width={40} height={35} alt='home doc' />
                         <p className='text-lg font-medium py-4'>We provide PM support upto 15-16 hours.</p>
                     </div>
                     <div className="md:w-[30%] flex ">
-                        <Image className='w-9 h-10 my-7 pb-4 mx-4' src='/assets/project_marker.png' width={40} height={35} />
+                        <Image className='w-9 h-10 my-7 pb-4 mx-4' src='/assets/project_marker.png' width={40} height={35} alt='home'/>
                         <p className='text-lg font-medium py-4'>Single POC for Adhoc or multi country projects.</p>
 
                     </div>
                     <div className="md:w-[30%] flex">
-                        <Image className='w-9 h-10 my-7 pb-4 mx-4' src='/assets/project_marker.png' width={40} height={35} />
+                        <Image className='w-9 h-10 my-7 pb-4 mx-4' src='/assets/project_marker.png' width={40} height={35} alt='home'/>
                         <p className='text-lg font-medium py-4'>After project commissioning, we testing and launch studies programmed by clients with 2 hour lead time</p>
                     </div>
                 </div>
@@ -92,14 +92,14 @@ function WhatWeOffer() {
                     <li className='py-2'>Cancer – Breast, Lung, Colorectal</li>
                     <li className='py-2'>Chronic Diseases – Multiple Sclerosis</li>
                     <li className='py-2'>Diabetes - Type 1 and 2</li>
-                    <li className='py-2'>Digestive Conditions – IBD, Crohn's Disease, Ulcerative Colitis, GERD, IBS</li>
+                    <li className='py-2'>Digestive Conditions – IBD, Crohn&apos;s Disease, Ulcerative Colitis, GERD, IBS</li>
                     <li className='py-2'>Eye Conditions -Cataract, Dry eye, Glaucoma</li>
                     <li className='py-2'>Female Conditions – Menopause, Fibroids, PMS, Endometriosis</li>
                     <li className='py-2'>Heart conditions - High Cholesterol, Heart Failure/Stroke</li>
                     <li className='py-2'>Kidney Conditions – CKD</li>
                     <li className='py-2'>Liver Conditions – Hepatitis C</li>
                     <li className='py-2'>Male Conditions - Erectile dysfunction, Prostate enlargement, Impotence</li>
-                    <li className='py-2'>Neurological Disorders - Epilepsy, Alzheimer's Disease, Migraines, Parkinson's Disease</li>
+                    <li className='py-2'>Neurological Disorders - Epilepsy, Alzheimer&apos;s Disease, Migraines, Parkinson&apos;s Disease</li>
                     <li className='py-2'>Psychological Disorders – ADHD, Anxiety, Bipolar, Disorder, Depression, Schizophrenia</li>
                     <li className='py-2'>Respiratory – Asthma, COPD</li>
                     <li className='py-2'>Skin Conditions – Acne, Atopic Dermatitis, Eczema, Psoriasis</li>

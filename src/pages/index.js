@@ -24,7 +24,7 @@ export default function Home() {
             <Link href='/what-we-offer'><button className='mt-2 lg:mt-20 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>What We Offer</button></Link>
           </div>
         </div>
-        <Image src='/assets/homepage.png' width={1350} height={300} />
+        <Image src='/assets/homepage.png' width={1350} height={300} alt='home doc' />
 
       </div>
       <div className='max-w-screen mx-auto py-8'>
@@ -33,19 +33,19 @@ export default function Home() {
         <div className="md:flex max-w-screen md:mx-40 mt-8 md:justify-between">
           <div>
             <div className="flex justify-center  items-center">
-              <Image className='' src='/assets/qualitative_studies.png' width={180} height={90} />
+              <Image className='' src='/assets/qualitative_studies.png' width={180} height={90} alt='home doc'/>
             </div>
             <h6 className='text-center font-medium pb-4'>Qualitative Studies &<br /> Quantitative Studies</h6>
           </div>
           <div>
             <div className="flex justify-center  items-center">
-              <Image className='' src='/assets/project_management.png' width={180} height={90} />
+              <Image className='' src='/assets/project_management.png' width={180} height={90} alt='home doc'/>
             </div>
             <h6 className='text-center font-medium pb-4'>Project Management</h6>
           </div>
           <div>
             <div className="flex justify-center  items-center">
-              <Image className='' src='/assets/qualified_panel.png' width={180} height={90} />
+              <Image className='' src='/assets/qualified_panel.png' width={180} height={90} alt='home doc'/>
             </div>
             <h6 className='text-center font-medium pb-4'>Qualified panel</h6>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
             <div className="flex justify-center  items-center ">
               <div className=''>
                 {/* <Image className='' src='/assets/panel_quality.png' width={180} height={90} /> */}
-                <Image className=' ' src='/assets/qualityimg.png' width={180} height={120} />
+                <Image className=' ' src='/assets/qualityimg.png' width={180} height={120} alt='home doc'/>
               </div>
             </div>
             <h6 className='text-center font-medium pb-4'>Panel Quality Measures</h6>
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
         </div>
         <div className='pt-10'>
-          <Image src='/assets/platforms_img.png' width={450} height={300} />
+          <Image src='/assets/platforms_img.png' width={450} height={300} alt='home doc'/>
         </div>
         
       </div>

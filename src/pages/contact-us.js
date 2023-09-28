@@ -18,25 +18,25 @@ function Contactus() {
           </div>
 
         </div>
-        <Image src='/assets/contactimg.png' width={1350} height={300} />
+        <Image src='/assets/contactimg.png' width={1350} height={300} alt='home'/>
         <div className='md:flex mx-8 justify-between md:mx-32'>
           <div className='w-72 bg-[#5BDCDC] mx-4 text-center rounded my-4'>
           <div className='flex justify-center'>
-            <Image className='w-20 h-20 py-5 px-4' src='/assets/mail_icon.png' width={40} height={35} />
+            <Image className='w-20 h-20 py-5 px-4' src='/assets/mail_icon.png' width={40} height={35} alt='home'/>
             </div>
               <h4 className='text-2xl font-bold'>CONTACT US</h4>
               <p className='text-white px-8 pt-2 pb-3 font-semibold'>pavan.k@krystalresearch.com</p>
           </div>
           <div className='w-72 bg-[#5BDCDC] mx-4 text-center rounded my-4'>
           <div className='flex justify-center'>
-              <Image className='w-20 h-20 py-5 px-4' src='/assets/call_icon.png' width={40} height={35} />
+              <Image className='w-20 h-20 py-5 px-4' src='/assets/call_icon.png' width={40} height={35} alt='home'/>
               </div>
               <h4 className='text-2xl font-bold'>CALL US</h4>
               <p className='text-white px-8 pt-2 pb-3 font-semibold'>PH: +919886911825</p>
           </div>
           <div className='w-72 bg-[#5BDCDC] mx-4 text-center rounded my-4'>
             <div className='flex justify-center'>
-              <Image className='w-20 h-20 py-2' src='/assets/home_icon.png' width={40} height={35} />
+              <Image className='w-20 h-20 py-2' src='/assets/home_icon.png' width={40} height={35} alt='home'/>
             </div>
             <h4 className='text-2xl font-bold'>VISIT US</h4>
             <p className='text-white px-8 pt-2 font-semibold'>Krystal Research Solutions</p>
