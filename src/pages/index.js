@@ -1,118 +1,85 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Link from 'next/link'
+import { Roboto } from 'next/font/google'
+import Head from 'next/head'
+import Navbar from '@/components/navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Head>
+        <title>KrystalReseach || Home</title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
+    <main style={roboto.style}>
+      <div className='w-full relative'>
+        {/* <Navbar /> */}
+        {/* Home */}
+        <div className='absolute w-30 py-2 lg:py-8'>
+          <div className="w-[90%] sm:w-[56%]  sm:pl-32 sm:py-10 mx-8">
+            {/* <p>hello guys</p> */}
+            <h2 className='lg:text-5xl sm:text-3xl text-xl tracking-wide text-[#616663] font-bold leading-tight'>Our Mission is to Empower Access to Quality and Actionable <span className='text-[#5bdcdc]'>Healthcare Data</span>.</h2>
+            <Link href='/what-we-offer'><button className='mt-2 lg:mt-20 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>What We Offer</button></Link>
+          </div>
+        </div>
+        <Image src='/assets/homepage.png' width={1350} height={300} />
+
+      </div>
+      <div className='max-w-screen mx-auto py-8'>
+        <h4 className='text-center py-4 px-4 lg:px-72 font-semibold text-xl'><span className='text-[#5bdcdc]'>WE OFFER</span> Qualitative and Quantitative Healthcare Market Research Services with a Rigorously Authenticated Panel.</h4>
+
+        <div className="md:flex max-w-screen md:mx-40 mt-8 md:justify-between">
+          <div>
+            <div className="flex justify-center  items-center">
+              <Image className='' src='/assets/qualitative_studies.png' width={180} height={90} />
+            </div>
+            <h6 className='text-center font-medium pb-4'>Qualitative Studies &<br /> Quantitative Studies</h6>
+          </div>
+          <div>
+            <div className="flex justify-center  items-center">
+              <Image className='' src='/assets/project_management.png' width={180} height={90} />
+            </div>
+            <h6 className='text-center font-medium pb-4'>Project Management</h6>
+          </div>
+          <div>
+            <div className="flex justify-center  items-center">
+              <Image className='' src='/assets/qualified_panel.png' width={180} height={90} />
+            </div>
+            <h6 className='text-center font-medium pb-4'>Qualified panel</h6>
+          </div>
+          <div>
+            <div className="flex justify-center  items-center ">
+              <div className=''>
+                {/* <Image className='' src='/assets/panel_quality.png' width={180} height={90} /> */}
+                <Image className=' ' src='/assets/qualityimg.png' width={180} height={120} />
+              </div>
+            </div>
+            <h6 className='text-center font-medium pb-4'>Panel Quality Measures</h6>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className='w-screen bg-[#abf0f0] md:flex pb-8'>
+        <div className='md:w-[50%]'>
+        <div className='flex md:pl-32 pt-20'>
+          <p className="w-12 h-12 mx-4 my-1 bg-[#cef3f3] rounded-full text-center text-[#6f7c7c] pt-3">1</p>
+          <p className='w-[60%] font-normal text-lg'>We Offer a Platform for Connecting Physicians and Allied Healthcare Professionals.</p>
+        </div>
+        <div className='flex md:pl-32 pt-20 '>
+          <p className="w-12 h-12 mx-4 my-1 bg-[#cef3f3] rounded-full text-center text-[#6f7c7c] pt-3">2</p>
+          <p className='md:w-[60%] font-normal text-lg'>We collect perspectives to support decision-making</p>
+        </div>
+        <div className='flex justify-center md:justify-start'>
+        <Link href='/what-we-offer'><button className='mt-2  w-[100%]  md:ml-48 md:mt-8 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>Learn More</button></Link>
+        </div>
+        </div>
+        <div className='pt-10'>
+          <Image src='/assets/platforms_img.png' width={450} height={300} />
+        </div>
+        
       </div>
     </main>
+    </>
   )
 }
