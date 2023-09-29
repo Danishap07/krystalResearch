@@ -87,7 +87,7 @@ function WhatWeOffer() {
 
             <div className='bg-white'>
                 <h3 className='text-center text-2xl font-bold py-4 text-slate-900'>CONDITION COVERED:</h3>
-                <div className='flex justify-between'>
+                <div className='md:flex md:justify-between'>
                 <ul className='pl-6 list-disc font-2xl font-semibold leading-relaxed text-lg py-4 md:pl-16 md:pr-6'>
                     <li className='py-2 text-slate-900'>Allergies – Food, Drugs, Pets</li>
                     <li className='py-2 text-slate-900'>Bone and Joint – Arthritis, Osteoporosis, back pain</li>
