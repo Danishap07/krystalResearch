@@ -99,7 +99,7 @@ function WhatWeOffer() {
                     <li className='py-2 text-slate-900'>Female Conditions – Menopause, Fibroids, PMS, Endometriosis</li>
                     <li className='py-2 text-slate-900'>Heart conditions - High Cholesterol, Heart Failure/Stroke</li>
                     </ul>
-                    <ul className='pl-6 list-disc font-2xl font-semibold leading-relaxed text-lg py-4 md:pl-16 md:pr-6'>
+                    <ul className='pl-6 list-disc font-2xl font-semibold leading-relaxed text-lg md:py-4 md:pl-16 md:pr-6'>
                     <li className='py-2 text-slate-900'>Kidney Conditions – CKD</li>
                     <li className='py-2 text-slate-900'>Liver Conditions – Hepatitis C</li>
                     <li className='py-2 text-slate-900'>Male Conditions - Erectile dysfunction, Prostate enlargement, Impotence</li>
