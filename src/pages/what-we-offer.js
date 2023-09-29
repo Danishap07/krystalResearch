@@ -112,23 +112,23 @@ function WhatWeOffer() {
                 <h3 className='text-center text-2xl md:text-3xl font-bold py-4'>PANEL QUALITY MEASURES:</h3>
                 <h4 className='text-[#4ad6d6] text-center text-2xl font-bold md:mx-96'>Quality is managed and ensured via 5-step panel authentication process.</h4>
 
-                <div className='flex align-middle  mx-40 pb-8'>
+                <div className='flex align-middle  md:mx-40 pb-8'>
                 <p className="w-12 h-12 mx-4 px-5 my-1 bg-[#4ad6d6] rounded-full text-center text-[#6f7c7c] pt-3">1</p>
                 <p className='md:pl-6 pt-3 font-medium text-2xl'>Double opt-in</p>
                 </div>
-                <div className='flex align-middle mx-40 pb-8'>
+                <div className='flex align-middle md:mx-40 pb-8'>
                 <p className="w-12 h-12 mx-4 px-5 my-1 bg-[#4ad6d6] rounded-full text-center text-[#6f7c7c] pt-3">2</p>
                 <p className='md:pl-6 pt-3 font-medium text-2xl'>Mobile Verification</p>
                 </div>
-                <div className='flex align-middle mx-40 pb-8'>
+                <div className='flex align-middle md:mx-40 pb-8'>
                 <p className="w-12 h-12 mx-4 px-5 my-1 bg-[#4ad6d6] rounded-full text-center text-[#6f7c7c] pt-3">3</p>
                 <p className='md:pl-6 pt-3 font-medium text-2xl'>License/NPI/ME verification</p>
                 </div>
-                <div className='flex align-middle mx-40 pb-8'>
+                <div className='flex align-middle md:mx-40 pb-8'>
                 <p className="w-12 h-12 mx-4 px-5 my-1 bg-[#4ad6d6] rounded-full text-center text-[#6f7c7c] pt-3">4</p>
                 <p className='md:pl-6 pt-3 font-medium text-2xl'>Online and social media authentication</p>
                 </div>
-                <div className='flex align-middle mx-40 pb-8'>
+                <div className='flex align-middle md:mx-40 pb-8'>
                 <p className="w-12 h-12 mx-4 px-5 my-1 bg-[#4ad6d6] rounded-full text-center text-[#6f7c7c] pt-3">5</p>
                 <p className='md:pl-6 pt-3 font-medium text-2xl'>Monitoring responses in Surveys</p>
                 </div>
