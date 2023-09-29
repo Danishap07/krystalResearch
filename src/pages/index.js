@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Roboto } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Head from 'next/head'
 import Navbar from '@/components/navbar'
 
-const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ['latin'] })
+const poppins = Poppins({ weight: ["100", "200", "300", "400", "500","600", "700","800", "900"], subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <title>KrystalReseach || Home</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-    <main style={roboto.style}>
+    <main style={poppins.style}>
       <div className='w-full relative'>
         {/* <Navbar /> */}
         {/* Home */}
@@ -24,30 +24,30 @@ export default function Home() {
             <Link href='/what-we-offer'><button className='mt-2 lg:mt-20 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>What We Offer</button></Link>
           </div>
         </div>
-        <Image src='/assets/homepage.png' width={1350} height={300} alt='home doc' />
+        <Image src='/assets/homepage.png' width={1500} height={300} alt='home doc' />
 
       </div>
-      <div className='max-w-screen mx-auto py-8'>
-        <h4 className='text-center py-4 px-4 lg:px-72 font-semibold text-xl'><span className='text-[#5bdcdc]'>WE OFFER</span> Qualitative and Quantitative Healthcare Market Research Services with a Rigorously Authenticated Panel.</h4>
+      <div className='max-w-screen mx-auto py-8 bg-white'>
+        <h4 className='text-center py-4 px-4 lg:px-72 font-semibold text-xl text-slate-900'><span className='text-[#5bdcdc]'>WE OFFER</span> Qualitative and Quantitative Healthcare Market Research Services with a Rigorously Authenticated Panel.</h4>
 
         <div className="md:flex max-w-screen md:mx-40 mt-8 md:justify-between">
           <div>
             <div className="flex justify-center  items-center">
               <Image className='' src='/assets/qualitative_studies.png' width={180} height={90} alt='home doc'/>
             </div>
-            <h6 className='text-center font-medium pb-4'>Qualitative Studies &<br /> Quantitative Studies</h6>
+            <h6 className='text-center font-medium pb-4 text-slate-900'>Qualitative Studies &<br /> Quantitative Studies</h6>
           </div>
           <div>
             <div className="flex justify-center  items-center">
               <Image className='' src='/assets/project_management.png' width={180} height={90} alt='home doc'/>
             </div>
-            <h6 className='text-center font-medium pb-4'>Project Management</h6>
+            <h6 className='text-center font-medium pb-4 text-slate-900'>Project Management</h6>
           </div>
           <div>
             <div className="flex justify-center  items-center">
               <Image className='' src='/assets/qualified_panel.png' width={180} height={90} alt='home doc'/>
             </div>
-            <h6 className='text-center font-medium pb-4'>Qualified panel</h6>
+            <h6 className='text-center font-medium pb-4 text-slate-900'>Qualified panel</h6>
           </div>
           <div>
             <div className="flex justify-center  items-center ">
@@ -56,7 +56,7 @@ export default function Home() {
                 <Image className=' ' src='/assets/qualityimg.png' width={180} height={120} alt='home doc'/>
               </div>
             </div>
-            <h6 className='text-center font-medium pb-4'>Panel Quality Measures</h6>
+            <h6 className='text-center font-medium pb-4 text-slate-900'>Panel Quality Measures</h6>
           </div>
         </div>
       </div>
@@ -64,11 +64,11 @@ export default function Home() {
         <div className='md:w-[50%]'>
         <div className='flex md:pl-32 pt-20'>
           <p className="w-12 h-12 mx-4 my-1 bg-[#cef3f3] rounded-full text-center text-[#6f7c7c] pt-3">1</p>
-          <p className='w-[60%] font-normal text-lg'>We Offer a Platform for Connecting Physicians and Allied Healthcare Professionals.</p>
+          <p className='w-[60%] font-normal text-lg text-slate-900'>We Offer a Platform for Connecting Physicians and Allied Healthcare Professionals.</p>
         </div>
         <div className='flex md:pl-32 pt-20 '>
           <p className="w-12 h-12 mx-4 my-1 bg-[#cef3f3] rounded-full text-center text-[#6f7c7c] pt-3">2</p>
-          <p className='md:w-[60%] font-normal text-lg'>We collect perspectives to support decision-making</p>
+          <p className='md:w-[60%] font-normal text-lg text-slate-900'>We collect perspectives to support decision-making</p>
         </div>
         <div className='flex justify-center md:justify-start'>
         <Link href='/what-we-offer'><button className='mt-2  w-[100%]  md:ml-48 md:mt-8 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>Learn More</button></Link>
