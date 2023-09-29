@@ -5,7 +5,7 @@ import { Rubik } from 'next/font/google'
 const rubik = Rubik({ subsets: ['latin'] })
 function Footer() {
   return (
-    <div className='bg-[#5E5E5E] text-center md:text-left  md:px-40 md:pt-10'>
+    <div className='bg-[#5E5E5E] text-center pt-4 md:text-left  md:px-40 md:pt-10'>
       
       <div className='md:flex justify-between '>
         <div className=''>
