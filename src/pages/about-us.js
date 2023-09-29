@@ -42,7 +42,7 @@ function AboutUs() {
           <p className='text-center py-2 px-2 mt-6 text-slate-900'>We are committed to providing our clients with quality, actionable data.</p>
         </div>
       </div>
-      <div className='py-6 bg-gradient-to-r from-[#D6F6F6] text-center'>
+      <div className='py-6 bg-gradient-to-r from-[#D6F6F6] to-slate-50 text-center'>
         <h3 className='font-bold text-center text-2xl pt-2 uppercase text-slate-900'>How can we help you?</h3>
         <div className='md:flex justify-between mx-16'>
           <div className='bg-[#5BDCDC] mx-10 my-4 py-4 rounded-2xl'>
