@@ -11,9 +11,10 @@ function Contactus() {
   const [err_email, set_err_email] = useState("")
   const [err_message, set_err_message] = useState("")
   const [show_modal, set_show_modal] = useState(false)
-  const [submit_button, set_submit_button] = useState("Submit")
+  const [submit_button, set_submit_button] = useState(false)
 
   const submitForm = async () => {
+    set_submit_button(true)
     set_err_name("")
     set_err_email("")
     set_err_message("")
@@ -44,7 +45,6 @@ function Contactus() {
       return formIsValid = false
     }
     console.log("first", )
-
     const data = {
       name: name, 
       email: email, 
@@ -64,6 +64,7 @@ function Contactus() {
       set_email("")
       set_message("")
       set_show_modal(true)
+      set_submit_button(false)
     }
     else {
       console.log(res.data.message)
@@ -95,7 +96,7 @@ function Contactus() {
                 <Image className='' src='/assets/success_modal_img.jpg' width={120} height={120} alt='success' />
                 </div>
                 <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Thank You for contacting Krystal Research Solutions. <br/> </h3>
-                <button data-modal-hide="popup-modal" type="button" className="text-white bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 focus:ring-4 focus:outline-none  dark:focus:ring-[#5bdcdc] font-medium rounded-lg text-sm inline-flex items-center px-16 py-2.5 text-center mr-2" onClick={() => set_show_modal(false)}>
+                <button data-modal-hide="popup-modal" type="button" className="text-white bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 focus:ring-4 focus:outline-none  dark:focus:ring-[#5bdcdc] font-medium rounded-lg text-sm inline-flex items-center px-16 py-2.5 text-center mr-2 disabled:bg-opacity-70" onClick={() => set_show_modal(false)} >
                     Done!
                 </button>
                 {/* <button data-modal-hide="popup-modal" type="button" className="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">No, cancel</button> */}
@@ -141,7 +142,7 @@ function Contactus() {
         </div>
         <div className='pt-8 flex justify-center '>
           <div>
-          <button className='w-64 md:w-96 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full focus:disabled:opacity-75' onClick={() => submitForm()}>Submit</button>
+          <button className='w-64 md:w-96 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full disabled:opacity-75' disabled={submit_button} onClick={() => submitForm()}>Submit</button>
           </div>
         </div>
         {/* <div className='md:flex mx-8 justify-between md:mx-32'>
