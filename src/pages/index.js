@@ -24,7 +24,7 @@ export default function Home() {
             <Link href='/what-we-offer'><button className='mt-2 lg:mt-20 bg-[#5bdcdc] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>What We Offer</button></Link>
           </div>
         </div>
-        <Image src='/assets/homepage.png' width={1500} height={300} alt='home doc' />
+        <Image src='/assets/homepage.png' layout='responsive' objectFit='cover' width={1500} height={300} alt='home doc' />
 
       </div>
       <div className='max-w-screen mx-auto py-8 bg-white'>
