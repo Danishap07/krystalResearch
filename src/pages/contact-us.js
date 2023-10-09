@@ -122,21 +122,21 @@ function Contactus() {
         <div className='pt-8 flex justify-center '>
           <div>
           <h5 className='text-2xl font-semibold leading-relaxed text-[#5bdcdc]'>Name</h5>
-          <input className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" placeholder='Name' value={name} onChange={(e)=> set_name(e.target.value)} />
+          <input className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="text" placeholder='Name' value={name} onChange={(e)=> set_name(e.target.value)} />
           <h6 className='text-red-600 font-normal text-sm pl-2'>{err_name}</h6>
           </div>
         </div>
         <div className='pt-8 flex justify-center '>
           <div>
           <h5 className='text-2xl font-semibold leading-relaxed text-[#5bdcdc]'>Email</h5>
-          <input className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="email" placeholder='Email' value={email} onChange={(e) => set_email(e.target.value)} />
+          <input className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="email" placeholder='Email' value={email} onChange={(e) => set_email(e.target.value)} />
           <h6 className='text-red-600 font-normal text-sm pl-2'>{err_email}</h6>
           </div>
         </div>
         <div className='pt-8 flex justify-center '>
           <div>
           <h5 className='text-2xl font-semibold leading-relaxed text-[#5bdcdc]'>Message</h5>
-          <textarea rows='4' className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" placeholder='Message' value={message} onChange={(e) => set_message(e.target.value)} />
+          <textarea rows='4' className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="text" placeholder='Message' value={message} onChange={(e) => set_message(e.target.value)} />
           <h6 className='text-red-600 font-normal text-sm pl-2'>{err_message}</h6>
           </div>
         </div>
