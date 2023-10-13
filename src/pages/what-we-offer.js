@@ -28,7 +28,7 @@ function WhatWeOffer() {
             <div className='bg-white'>
             <div className='py-10 text-center'>
                 <div className='md:mx-[25%] mx-4 font-bold'>
-                    <h3 className='text-2xl uppercase text-slate-900'>Our Services: </h3>
+                    <h3 className='font-bold text-4xl text-center my-6 text-slate-900'>Our Services: </h3>
                     <h3 className='text-[#5bdcdc] text-2xl'>
                         Covering both Qualitative and Quantitative Studies
                     </h3>
@@ -81,12 +81,12 @@ function WhatWeOffer() {
             </div>
 
             <div className='bg-[#abf0f0] text-center text-lg py-8'>
-                <h3 className='font-bold text-2xl pt-6 text-slate-900'>PANEL DETAILS:</h3>
+                <h3 className='font-bold text-4xl pt-6 text-slate-900'>PANEL DETAILS:</h3>
                 <p className='px-3 py-10 md:mx-36 font-semibold text-slate-900'>Give your business research the advantage of ease and efficacy with first party, quality panels. Benefit from multi-dimensional reach with our expansive online panel community across North America, Europe countries, Soon we will have presence in South American and APAC region.</p>
             </div>
 
             <div className='bg-white'>
-                <h3 className='text-center text-2xl font-bold py-4 text-slate-900'>CONDITION COVERED:</h3>
+                <h3 className='text-center text-4xl font-bold py-4 text-slate-900'>CONDITION COVERED:</h3>
                 <div className='md:flex md:justify-between'>
                 <ul className='pl-6 list-disc font-2xl font-semibold leading-relaxed text-lg md:py-4 md:pl-16 md:pr-6'>
                     <li className='py-2 text-slate-900'>Allergies – Food, Drugs, Pets</li>
@@ -114,7 +114,7 @@ function WhatWeOffer() {
             </div>
 
             <div className='bg-[#bdf8f8]'>
-                <h3 className='text-center text-2xl md:text-3xl font-bold py-4 text-slate-900'>PANEL QUALITY MEASURES:</h3>
+                <h3 className='text-center font-bold text-4xl md:text-3xl  py-4 text-slate-900'>PANEL QUALITY MEASURES:</h3>
                 <h4 className='text-[#4ad6d6] text-center text-2xl font-bold md:mx-96'>Quality is managed and ensured via 5-step panel authentication process.</h4>
 
                 <div className='flex align-middle  md:mx-40 pb-8'>
