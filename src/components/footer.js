@@ -18,13 +18,13 @@ function Footer() {
         <div>
           {/* <h5 className='text-xl font-semibold text-neutral-50 pt-10 md:pt-0'>APAC</h5> */}
           <div className='mt-2'>
-            <h6 className='text-neutral-50'>Krystal Research Solutions</h6>
-            <p className='text-neutral-50'>1st floor, Civil Hospital Road, Fort Area Dharwad</p>
-            <p className='text-neutral-50'>Karnataka - 580008</p>
-            <p className='text-neutral-50'>
+            <h6 className='text-neutral-50 font-semibold'>Krystal Research Solutions</h6>
+            <p className='text-neutral-50 font-semibold'>1st floor, Civil Hospital Road, Fort Area Dharwad</p>
+            <p className='text-neutral-50 font-semibold'>Karnataka - 580008</p>
+            <p className='text-neutral-50 font-semibold'>
               PH: +919886911825
             </p>
-            <a href="mailto:pavan.k@krystalresearch.com" className='text-neutral-50'>pavan.k@krystalresearch.com</a>
+            <a href="mailto:pavan.k@krystalresearch.com" className='text-neutral-50 font-semibold'>pavan.k@krystalresearch.com</a>
           </div>
         </div>
       </div>
