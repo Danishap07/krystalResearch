@@ -110,9 +110,9 @@ function Contactus() {
 
       <div className='w-full relative bg-white pb-10'>
         <div className='absolute py-2 lg:py-8'>
-          <div className="md:mx-[14%] mx-4 text-center sm:py-10">
+          <div className="md:mx-12 sm:pr-96">
             {/* <p>hello guys</p> */}
-            <h3 className='text-[#5bdcdc] lg:text-5xl sm:text-3xl text-xl font-bold'>CONTACT US:</h3>
+            {/* <h3 className='text-[#5bdcdc] lg:text-5xl sm:text-3xl text-xl font-bold'>CONTACT US:</h3> */}
             <h2 className='mx-4 pt-4 lg:text-5xl sm:text-3xl text-xl tracking-wide text-[#616663] font-bold leading-tight'>Need an expert you are more than welcomed to leave your contact info and we will be in touch shortly.</h2>
           </div>
         </div>

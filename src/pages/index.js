@@ -35,7 +35,7 @@ export default function Home() {
             <div className="flex justify-center  items-center">
               <Image className='' src='/assets/qualitative_studies.png' width={180} height={90} alt='home doc'/>
             </div>
-            <h6 className='text-center font-medium pb-4 text-slate-900'>Qualitative Studies &<br /> Quantitative Studies</h6>
+            <h6 className='text-center font-medium pb-4 text-slate-900'>Qualitative &<br /> Quantitative Studies</h6>
           </div>
           <div>
             <div className="flex justify-center  items-center">
