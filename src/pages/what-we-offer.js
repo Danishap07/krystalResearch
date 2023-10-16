@@ -36,7 +36,7 @@ function WhatWeOffer() {
             </div>
             <div className='md:flex justify-between md:mx-32 '>
                 <div className='md:w-[100%] mx-4 md:ml-20'>
-                    <h3 className='text-4xl font-semibold text-slate-900'>Qualitative</h3>
+                    <h3 className='text-4xl font-semibold text-center md:text-left text-slate-900'>Qualitative</h3>
                     <p className='my-6 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>IDIs</p>
                     <p className='my-6 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>TDIs</p>
                     <p className='my-6 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>Moderation</p>
@@ -52,7 +52,7 @@ function WhatWeOffer() {
                     <Image src='/assets/doc2.png' width={1100} height={300} alt='home doc'/>
                 </div>
                 <div className='md:w-[100%] mx-4 md:ml-12 '>
-                    <h3 className='text-4xl font-semibold text-slate-900'>Quantitative</h3>
+                    <h3 className='text-4xl font-semibold text-center md:text-left text-slate-900'>Quantitative</h3>
                     <p className='my-6 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>Online top-ups and full service projects</p>
                     <p className='my-6 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>Trackers</p>
                     <p className='my-6 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>PRFs</p>
