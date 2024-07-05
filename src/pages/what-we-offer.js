@@ -194,31 +194,31 @@ function WhatWeOffer() {
                 <section ref={el => sectionsRef.current[6] = el} className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 '>
                     <h3 className='text-center font-bold text-4xl py-6 text-[#002147]'>Panel Quality Measures:</h3>
                     <h4 className='text-[#002147] text-center text-2xl font-bold '>Quality is managed and ensured via 5-step panel authentication process.</h4>
-                    <div className='flex flex-col justify-center items-center '>
+                    <div className='flex flex-col justify-center items-center pl-6'>
                         <div className='flex  md:mx-44  py-6 w-[400px]'>
                             {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center text-white pt-3">1</p> */}
                             <Image className='w-8 h-7 ' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
-                            <p className='md:pl-6  font-medium text-lg text-slate-900'>Double opt-in</p>
+                            <p className='pl-6  font-medium text-lg text-slate-900'>Double opt-in</p>
                         </div>
                         <div className='flex  md:mx-44  py-6 w-[400px]'>
                             {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center text-white pt-3">2</p> */}
                             <Image className='w-8 h-7 ' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
-                            <p className='md:pl-6  font-medium text-lg text-slate-900'>Mobile Verification</p>
+                            <p className='pl-6  font-medium text-lg text-slate-900'>Mobile Verification</p>
                         </div>
                         <div className='flex  md:mx-44  py-6 w-[400px]'>
                             {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center text-white pt-3">3</p> */}
                             <Image className='w-8 h-7 ' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
-                            <p className='md:pl-6 font-medium text-lg text-slate-900'>License/NPI/ME verification</p>
+                            <p className='pl-6 font-medium text-lg text-slate-900'>License/NPI/ME verification</p>
                         </div>
                         <div className='flex  md:mx-44  py-6 w-[400px]'>
                             {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center text-white pt-3">4</p> */}
                             <Image className='w-8 h-7 ' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
-                            <p className='md:pl-6 font-medium text-lg text-slate-900'>Online and social media authentication</p>
+                            <p className='pl-6 font-medium text-lg text-slate-900'>Online and social media authentication</p>
                         </div>
                         <div className='flex  md:mx-44  py-6 w-[400px]'>
                             {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center text-white pt-3">5</p> */}
                             <Image className='w-8 h-7 ' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
-                            <p className='md:pl-6 font-medium text-lg text-slate-900'>Monitoring responses in Surveys</p>
+                            <p className='pl-6 font-medium text-lg text-slate-900'>Monitoring responses in Surveys</p>
                         </div>
                     </div>
                 </section>
