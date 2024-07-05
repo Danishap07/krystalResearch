@@ -59,10 +59,10 @@ export default function Home() {
   }, []);
 
   useGSAP(() => {
-    gsap.fromTo(main.current, {opacity: 0},{
+    gsap.fromTo(main.current, {opacity: 0, x: -50},{
       opacity: 1,
       duration: 1,
-      x: 50,
+      x: 20,
       // delay: 0.5,
       stagger: 1
     })
@@ -134,10 +134,10 @@ export default function Home() {
           <section  className='w-full'>
             {/* <Navbar /> */}
             {/* Home */}
-            <div className='doctor-img py-2 lg:py-8 md:bg-fixed'  style={{ backgroundImage: "url('/assets/new-design/doctor_img.png')" }}>
-              <div ref={main} className="box1 w-[90%] sm:w-[68%]  sm:pl-32 sm:py-20  ">
+            <div className='doctor-img py-2 lg:py-8 bg-fixed '  style={{ backgroundImage: "url('/assets/new-design/doctor_img.png')" }}>
+              <div ref={main} className="box1 w-[90%] sm:w-[68%]  sm:pl-32  py-20 ">
                 {/* <p>hello guys</p> */}
-                <h2  className='lg:text-5xl sm:text-3xl text-xl tracking-wide text-[#EFEFF6] font-bold leading-tight'>Our Mission is to Empower Access to Quality and Actionable <span className='text-[#002147]'>Healthcare Data</span>.</h2>
+                <h2  className='lg:text-5xl sm:text-3xl text-2xl tracking-wide text-[#EFEFF6] font-bold leading-tight'>Our Mission is to Empower Access to Quality and Actionable <span className='text-[#002147]'>Healthcare Data</span>.</h2>
                 <Link href='/what-we-offer'><div ref={main} className='mt-2 lg:mt-20 bg-[#002147] text-[#EFEFF6] font-bold px-4 rounded-full group relative cursor-pointer overflow-hidden leading-6 w-[180px]'>
                   <span className='inline-block p-1 transition duration-500 ease-out group-hover:-translate-y-[120%]    font-sans font-medium py-3 px-4'>What We Offer</span>
                   <span className='absolute left-[10%] inline-block translate-y-[120%] rotate-12 p-1 transition duration-500 ease-out group-hover:translate-y-0 group-hover:rotate-0 font-sans font-medium text-white text-center py-3 px-4'>What We Offer</span>
