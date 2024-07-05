@@ -3,7 +3,7 @@ import { createTransport } from 'nodemailer'
 const contactEmail = async (req, res) => {
     // console.log(req.body
     //     )
-    const { name, email, message, phone } = req.body;
+    const { name, email, message, phone, company_name } = req.body;
     if (!name) {
         return res.status(400).json({ status: false, message: "Name is required." })
     }
@@ -49,6 +49,9 @@ const contactEmail = async (req, res) => {
                 <p style="margin: 20px 0px 20px;  line-height: 1.5; font-size: 14px; color: #000;font-weight: 700;">
                     Name: <span
                         style="margin: 20px 0px 20px;  line-height: 1.5; font-size: 14px; color: #000;font-weight: 500;">${name}</span> </p>
+                <p style="margin: 20px 0px 20px;  line-height: 1.5; font-size: 14px; color: #000;font-weight: 700;">
+                    Company Name: <span
+                        style="margin: 20px 0px 20px;  line-height: 1.5; font-size: 14px; color: #000;font-weight: 500;">${company_name}</span> </p>
                 <p style="margin: 20px 0px 20px;  line-height: 1.5; font-size: 14px; color: #000;font-weight: 700;">
                     Email Id: <span
                         style="margin: 20px 0px 20px;  line-height: 1.5; font-size: 14px; color: #000;font-weight: 500;">${email}</span> </p>

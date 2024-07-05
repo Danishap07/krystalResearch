@@ -41,17 +41,16 @@ export default function Home() {
     sections.forEach(section => {
       gsap.fromTo(
         section,
-        { opacity: 0, y: -50, scale: 0.8 },
+        { scale: 0.8 },
         {
-          opacity: 1,
-          y: 0,
           scale: 1,
           duration: 1,
           scrollTrigger: {
             trigger: section,
             start: 'top 80%',
-            end: 'bottom 20%',
+            end: 'top 30%',
             scrub: true,
+            toggleActions: 'play none none none',
           },
         }
       );
@@ -134,7 +133,7 @@ export default function Home() {
           <section  className='w-full'>
             {/* <Navbar /> */}
             {/* Home */}
-            <div className='doctor-img py-2 lg:py-8 bg-fixed '  style={{ backgroundImage: "url('/assets/new-design/doctor_img.png')" }}>
+            <div className='doctor-img py-2 lg:py-8 w-full bg-cover bg-fixed'  style={{ backgroundImage: "url('/assets/new-design/doctor_img.png')" }}>
               <div ref={main} className="box1 w-[90%] sm:w-[68%]  sm:pl-32  py-20 ">
                 {/* <p>hello guys</p> */}
                 <h2  className='lg:text-5xl sm:text-3xl text-2xl tracking-wide text-[#EFEFF6] font-bold leading-tight'>Our Mission is to Empower Access to Quality and Actionable <span className='text-[#002147]'>Healthcare Data</span>.</h2>
@@ -183,13 +182,13 @@ export default function Home() {
 
 
           </section>
-          <section ref={el => sectionsRef.current[1] = el} className='w-screen  md:flex pb-8'>
+          <section ref={el => sectionsRef.current[1] = el} className='w-screen md:flex justify-between place-items-start pb-8 md:px-32'>
             <div className='md:w-[50%]'>
-              <div className='flex md:pl-32 pt-20 text-[#000000]'>
+              <div className='flex  pt-20 text-[#000000]'>
                 <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center pt-3 text-white">1</p>
                 <p className='w-[60%] font-normal text-lg '>We Offer a Platform for Connecting Physicians and Allied Healthcare Professionals.</p>
               </div>
-              <div className='flex md:pl-32 pt-20 text-[#000000]'>
+              <div className='flex  pt-20 text-[#000000]'>
                 <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center text-white pt-3">2</p>
                 <p className='w-[60%] font-normal text-lg '>We collect perspectives to support decision-making</p>
               </div>
@@ -197,7 +196,7 @@ export default function Home() {
                 <Link href='/what-we-offer'><button className='mt-2  w-[100%]  md:ml-48 md:mt-8 bg-[#002147] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>Learn More</button></Link>
               </div>
             </div>
-            <div className='pt-10'>
+            <div className='pt-20'>
               <Image src='/assets/platforms_img.png' width={450} height={300} alt='home doc' />
             </div>
 

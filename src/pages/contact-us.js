@@ -8,10 +8,12 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 function Contactus() {
   const [name, set_name] = useState('')
+  const [company_name, set_company_name] = useState('')
   const [email, set_email] = useState('')
   const [phone_no, set_phone_no] = useState(null)
   const [message, set_message] = useState("")
   const [err_name, set_err_name] = useState("")
+  const [err_company_name, set_err_company_name] = useState("")
   const [err_email, set_err_email] = useState("")
   const [err_phone_no, set_err_phone_no] = useState("")
   const [err_message, set_err_message] = useState("")
@@ -48,17 +50,16 @@ function Contactus() {
     sections.forEach(section => {
       gsap.fromTo(
         section,
-        { opacity: 0, y: -50, scale: 0.8 },
+        { scale: 0.8 },
         {
-          opacity: 1,
-          y: 0,
           scale: 1,
           duration: 1,
           scrollTrigger: {
             trigger: section,
             start: 'top 80%',
-            end: 'bottom 20%',
+            end: 'top 30%',
             scrub: true,
+            toggleActions: 'play none none none',
           },
         }
       );
@@ -80,6 +81,14 @@ function Contactus() {
       set_err_name("Atleast 3 characters are required.")
       return formIsValid = false
     }
+    else if (company_name == "") {
+      set_err_company_name("Company Name is required.")
+      return formIsValid = false
+    }
+    else if (company_name.length < 3) {
+      set_err_company_name("Atleast 3 characters are required.")
+      return formIsValid = false
+    }
     else if (email == "") {
       set_err_email("Email is required.")
       return formIsValid = false
@@ -99,6 +108,7 @@ function Contactus() {
     console.log("first",)
     const data = {
       name: name,
+      company_name: company_name,
       email: email,
       phone: phone_no,
       message: message
@@ -166,7 +176,7 @@ function Contactus() {
                   </svg>
                   <span className="sr-only">Close modal</span>
                 </button>
-                <div className="p-6 text-center ">
+                <div className="p-6 text-center flex align-items-center ">
                   {/* <svg className="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                 </svg> */}
@@ -187,14 +197,14 @@ function Contactus() {
         null}
 
       <div  className='w-full relative bg-white pb-10'>
-        <div ref={textRef} className='absolute py-2 lg:py-8'>
-          <div className="md:mx-12 sm:pr-96">
+        <div ref={textRef} className=' py-2 lg:py-8 flex justify-center place-items-center h-[80vh] w-screen object-cover' style={{ backgroundImage: "url('/assets/contactimg.png')" }}>
+          <div className="md:mx-12 sm:pr-96 ">
             {/* <p>hello guys</p> */}
             {/* <h3 className='text-[#5bdcdc] lg:text-5xl sm:text-3xl text-xl font-bold'>CONTACT US:</h3> */}
-            <h2 className='mx-4 pt-4 lg:text-5xl sm:text-3xl text-xl tracking-wide text-[#616663] font-bold leading-tight'>Need an expert you are more than welcomed to leave your contact info and we will be in touch shortly.</h2>
+            <h2 className='mx-4 py-4 text-3xl md:text-5xl  tracking-wide text-[#616663] font-bold leading-tight'>Need an expert you are more than welcomed to leave your contact info and we will be in touch shortly.</h2>
           </div>
         </div>
-        <Image src='/assets/contactimg.png' layout='responsive' objectFit='cover' width={1500} height={300} alt='home' />
+        {/* <Image src='/assets/contactimg.png' layout='responsive' objectFit='cover' width={1500} height={300} alt='home' /> */}
         <h2 className='text-4xl text-center font-bold text-slate-900 pt-10'>Contact Us</h2>
 
         <section ref={el => sectionsRef.current[0] = el} className='pt-8 flex justify-center '>
@@ -206,27 +216,34 @@ function Contactus() {
         </section>
         <section ref={el => sectionsRef.current[1] = el} className='pt-8 flex justify-center '>
           <div>
+            <h5 className='text-2xl font-semibold leading-relaxed text-[#002147]'>Company Name</h5>
+            <input className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="text" placeholder='Company Name' value={company_name} onChange={(e) => set_company_name(e.target.value)} />
+            <h6 className='text-red-600 font-normal text-sm pl-2'>{err_company_name}</h6>
+          </div>
+        </section>
+        <section ref={el => sectionsRef.current[2] = el} className='pt-8 flex justify-center '>
+          <div>
             <h5 className='text-2xl font-semibold leading-relaxed text-[#002147]'>Email</h5>
             <input className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="email" placeholder='Email' value={email} onChange={(e) => set_email(e.target.value)} />
             <h6 className='text-red-600 font-normal text-sm pl-2'>{err_email}</h6>
           </div>
         </section>
         {/* <PhoneNumberInput */}
-        <section ref={el => sectionsRef.current[2] = el} className='pt-8 flex justify-center '>
+        <section ref={el => sectionsRef.current[3] = el} className='pt-8 flex justify-center '>
           <div>
             <h5 className='text-2xl font-semibold leading-relaxed text-[#002147]'>Mobile No</h5>
             <input className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="tel" placeholder='Mobile No' value={phone_no} onChange={(e) => handlePhoneChange(e)} />
             <h6 className='text-red-600 font-normal text-sm pl-2'>{err_email}</h6>
           </div>
         </section>
-        <section ref={el => sectionsRef.current[3] = el} className='pt-8 flex justify-center '>
+        <section ref={el => sectionsRef.current[4] = el} className='pt-8 flex justify-center '>
           <div>
             <h5 className='text-2xl font-semibold leading-relaxed text-[#002147]'>Message</h5>
             <textarea rows='4' className="block p-2.5 w-64 md:w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" type="text" placeholder='Message' value={message} onChange={(e) => set_message(e.target.value)} />
             <h6 className='text-red-600 font-normal text-sm pl-2'>{err_message}</h6>
           </div>
         </section>
-        <section ref={el => sectionsRef.current[4] = el} className='pt-8 flex justify-center '>
+        <section ref={el => sectionsRef.current[5] = el} className='pt-8 flex justify-center '>
           <div>
             <div className='flex flex-col justify-center place-items-center bg-[#002147] text-[#EFEFF6] font-bold py-2 px-4 rounded-full group relative cursor-pointer overflow-hidden leading-6 w-[180px]' disabled={submit_button} onClick={() => submitForm()}>
               <span className='inline-block p-1 transition duration-500 ease-out group-hover:-translate-y-[120%]    font-sans font-medium  px-4'>Submit</span>
