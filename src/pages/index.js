@@ -182,7 +182,7 @@ export default function Home() {
 
 
           </section>
-          <section ref={el => sectionsRef.current[1] = el} className='w-screen md:flex justify-between place-items-start md:px-32'>
+          <section ref={el => sectionsRef.current[1] = el} className='w-screen flex flex-col md:flex-row md:justify-between place-items-start md:px-32 space-y-4 mb-4'>
             <div className='md:w-[50%]'>
               <div className='flex justify-center text-[#000000]'>
                 {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center pt-3 text-white">1</p> */}
