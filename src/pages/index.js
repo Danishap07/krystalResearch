@@ -198,7 +198,7 @@ export default function Home() {
                 {/* <Link href='/what-we-offer'><button className='mt-2  w-[100%]  md:ml-48 md:mt-8 bg-[#002147] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>Learn More</button></Link> */}
                 <Link href='/what-we-offer'><div className='mt-6 lg:my-6 w-[250px] md:ml-24 bg-[#002147] text-[#EFEFF6] font-bold px-4 rounded-full group relative cursor-pointer overflow-hidden leading-6 flex flex-col justify-center'>
                   <span className='inline-block p-1 transition duration-500 ease-out group-hover:-translate-y-[120%] font-sans font-medium py-3 px-6 text-center'>Learn More</span>
-                  <span className='absolute left-[15%] inline-block translate-y-[120%] rotate-12 p-1 transition duration-500 ease-out group-hover:translate-y-0 group-hover:rotate-0 font-sans font-medium text-white text-center py-3 px-5 '>Learn More</span>
+                  <span className='absolute left-[20%] inline-block translate-y-[120%] rotate-12 p-1 transition duration-500 ease-out group-hover:translate-y-0 group-hover:rotate-0 font-sans font-medium text-white text-center py-3 px-8 '>Learn More</span>
                   </div></Link>
               </div>
             </div>
