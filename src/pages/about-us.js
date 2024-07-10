@@ -111,12 +111,12 @@ function AboutUs() {
       <section ref={el => sectionsRef.current[1] = el} className='py-6  text-center'>
         <h3 className='text-4xl font-bold text-center  py-6 uppercase text-[#002147]'>How can we help you?</h3>
         <div className='md:flex justify-between md:mx-16'>
-          <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-16 my-4 py-4 rounded-2xl'>
+          <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-16 my-4 py-4 rounded-2xl space-y-3'>
             <h6 className='leading-6 font-bold text-xl'>Make more Informed Decisions:</h6>
             <p className='md:mx-12 mx-4 font-semibold text-black'>Our research insights can help you understand your target market, identify opportunities, and make better strategic decisions.</p>
           </div>
-          <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-16 my-4 py-4 rounded-2xl'>
-            <h6 className='leading-6 font-bold text-xl'>Achieve Superior Results:</h6>
+          <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-16 my-4 py-4 rounded-2xl space-y-3'>
+            <h6 className='leading-6 font-bold text-xl '>Achieve Superior Results:</h6>
             <p className='md:mx-12 mx-4 font-semibold text-black'>Our research can help you develop and launch new products and services, improve your marketing campaigns, and expand into new markets.</p>
           </div>
         </div>
