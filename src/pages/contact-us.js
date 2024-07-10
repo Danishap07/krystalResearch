@@ -197,7 +197,7 @@ function Contactus() {
         null}
 
       <div  className='w-full relative bg-white pb-10'>
-        <div ref={textRef} className=' py-2 lg:py-8 flex justify-center place-items-center h-[80vh] w-screen object-cover' style={{ backgroundImage: "url('/assets/contactimg.png')" }}>
+        <div ref={textRef} className=' py-2 lg:py-8 flex justify-center place-items-center h-[620px] md:h-[72vh] w-screen object-cover' style={{ backgroundImage: "url('/assets/contactimg.png')" }}>
           <div className="md:mx-12 sm:pr-96 ">
             {/* <p>hello guys</p> */}
             {/* <h3 className='text-[#5bdcdc] lg:text-5xl sm:text-3xl text-xl font-bold'>CONTACT US:</h3> */}

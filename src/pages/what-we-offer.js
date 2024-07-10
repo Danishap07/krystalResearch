@@ -142,16 +142,16 @@ function WhatWeOffer() {
                         <h3 className='font-bold text-4xl text-center my-6 text-[#002147]'>Project Management:</h3>
                         <div className='md:flex md:justify-between my-6 px-2 md:mx-[10%]'>
                             <div className="md:w-[30%] flex">
-                                <Image className='w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home doc' />
+                                <Image className='w-7 md:w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={32} height={40} alt='home doc' />
                                 <p className='text-lg font-medium py-4 text-slate-900'>We provide PM support upto 15-16 hours.</p>
                             </div>
                             <div className="md:w-[30%] flex ">
-                                <Image className='w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
+                                <Image className='w-7 md:w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
                                 <p className='text-lg font-medium py-4 text-slate-900'>Single POC for Adhoc or multi country projects.</p>
 
                             </div>
                             <div className="md:w-[30%] flex">
-                                <Image className='w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
+                                <Image className='w-7 md:w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
                                 <p className='text-lg font-medium py-4 text-slate-900'>After project commissioning, we testing and launch studies programmed by clients with 2 hour lead time</p>
                             </div>
                         </div>
