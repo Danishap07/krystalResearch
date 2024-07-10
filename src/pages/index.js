@@ -182,17 +182,17 @@ export default function Home() {
 
 
           </section>
-          <section ref={el => sectionsRef.current[1] = el} className='w-screen md:flex justify-between place-items-start pb-4 md:px-32'>
+          <section ref={el => sectionsRef.current[1] = el} className='w-screen md:flex justify-between place-items-start md:px-32'>
             <div className='md:w-[50%]'>
-              <div className='flex justify-center pt-20 text-[#000000]'>
+              <div className='flex justify-center text-[#000000]'>
                 {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center pt-3 text-white">1</p> */}
-                <Image className='w-7 md:w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
-                <p className='w-[60%] font-normal text-lg py-4'>We Offer a Platform for Connecting Physicians and Allied Healthcare Professionals.</p>
+                <Image className='w-7 md:w-8 h-10 my-4 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
+                <p className='w-[60%] font-normal text-lg '>We Offer a Platform for Connecting Physicians and Allied Healthcare Professionals.</p>
               </div>
-              <div className='flex justify-center pt-20 text-[#000000]'>
+              <div className='flex justify-center text-[#000000]'>
                 {/* <p className="w-12 h-12 mx-4 my-1 bg-gradient-to-r from-[#002147] via-[#6f7c7c] to-[#ffffff] rounded-full text-center text-white pt-3">2</p> */}
                 <Image className='w-7 md:w-8 h-10 my-7 pb-4 mr-3' src='/assets/new-design/project_marker.png' width={40} height={35} alt='home' />
-                <p className='w-[60%] py-4 font-normal text-lg '>We collect perspectives to support decision-making</p>
+                <p className='w-[60%] pt-4 font-normal text-lg '>We collect perspectives to support decision-making</p>
               </div>
               <div className='flex justify-center md:justify-start'>
                 {/* <Link href='/what-we-offer'><button className='mt-2  w-[100%]  md:ml-48 md:mt-8 bg-[#002147] hover:underline hover:underline-offset-8 decoration-2 text-white font-bold py-2 px-4 rounded-full'>Learn More</button></Link> */}
@@ -202,7 +202,7 @@ export default function Home() {
                   </div></Link>
               </div>
             </div>
-            <div className='pt-20'>
+            <div className='flex justify-center items-center'>
               <Image src='/assets/new-design/homepage_bottom.png' width={450} height={300} alt='home doc' />
             </div>
 
