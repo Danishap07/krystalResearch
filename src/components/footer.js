@@ -24,6 +24,7 @@ function Footer() {
             <p className='text-neutral-50 font-semibold'>
               PH: +919886911825
             </p>
+            <a href="mailto:info@krystalresearch.com" className='text-neutral-50 font-semibold'>info@krystalresearch.com</a> <br/>
             <a href="mailto:pavan.k@krystalresearch.com" className='text-neutral-50 font-semibold'>pavan.k@krystalresearch.com</a>
           </div>
         </div>

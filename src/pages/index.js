@@ -4,22 +4,9 @@ import Link from 'next/link'
 import { Poppins } from 'next/font/google'
 import Head from 'next/head'
 import Navbar from '@/components/navbar'
-// import gsap from 'gsap'
 import { gsap } from "gsap";
-/* The following plugin is a Club GSAP perk */
-// import { ScrollSmoother } from "gsap/dist/ScrollSmoother";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import SmoothScroll from '@/components/smoothScroll'
-import CustomCursor from '@/components/customCursor'
-import { MenuButton } from '@/components/menu-button'
-
-
-// gsap.registerPlugin(ScrollTrigger);
-// gsap.registerPlugin(ScrollSmoother);
-// import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
-// import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
 
 const poppins = Poppins({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ['latin'] })
 
@@ -62,59 +49,9 @@ export default function Home() {
       opacity: 1,
       duration: 1,
       x: 20,
-      // delay: 0.5,
       stagger: 1
     })
-    // gsap.from ("button", {
-    //   opacity: 0,
-    //   duration: 2,
-    //   x: -50,
-    //   delay: 1.5
-    // })
   }, { scope: main })
-
-
-  // gsap.set(".ball", { xPercent: -50, yPercent: -50 })
-  // let targets = gsap.utils.toArray(".ball");
-  // window.addEventListener("mousemove", (e) => {
-  //   gsap.to(targets, {
-  //     duration: 1,
-  //     x: e.clientX,
-  //     y: e.clientY,
-  //     ease: "power1.out",
-  //     overwrite: "auto",
-  //     stagger: 0.02,
-  //   });
-  // });
-
-  //   const pin = gsap.fromTo(main.current, {
-  //     translateY: 0
-  //   }, {
-  //     translateY: "-300vh",
-  //     ease: "none",
-  //     duration: 1,
-  //     scrollTrigger: {
-  //       trigger: smoother.current,
-  //       start: "top top",
-  //       end: "2000 bottom",
-  //       scrub: 0.6,
-  //       pin: true,
-  //     }
-  //   })
-  //   return () => {
-  //     {/* A return function for killing the animation on component unmount */ }
-  //     pin.kill();
-  //   };
-
-
-  //   useGSAP(() => {
-  //     smoother.current = ScrollSmoother.create({
-  //       smooth: 2, // seconds it takes to "catch up" to native scroll position
-  //       effects: true, // look for data-speed and data-lag attributes on elements and animate accordingly
-  //     });
-  //   }, 
-  //   {scope: main}
-  // )
 
   return (
     <>
@@ -122,32 +59,21 @@ export default function Home() {
         <title>KrystalReseach || Home</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      {/* <CustomCursor /> */}
-      {/* <SmoothScroll> */}
-      {/* <div className="ball bg-[#171926] w-[10px] h-[10px] fixed top-0  left-0 rounded-xl"></div> 
-      <div className="follower-ball bg-transparent w-[10px] h-[10px] fixed top-0  left-0 rounded-xl"></div> */}
+      
       <main style={poppins.style} className=' ' >
         <div >
 
 
           <section  className='w-full'>
-            {/* <Navbar /> */}
-            {/* Home */}
             <div className='doctor-img py-2 lg:py-8 w-full bg-cover bg-fixed'  style={{ backgroundImage: "url('/assets/new-design/doctor_img.png')" }}>
               <div ref={main} className="box1 w-[90%] sm:w-[68%]  sm:pl-32  py-20 ">
-                {/* <p>hello guys</p> */}
                 <h2  className='lg:text-5xl sm:text-3xl text-2xl tracking-wide text-[#EFEFF6] font-bold leading-tight'>Our Mission is to Empower Access to Quality and Actionable <span className='text-[#002147]'>Healthcare Data</span>.</h2>
                 <Link href='/what-we-offer'><div ref={main} className='mt-2 lg:mt-20 bg-[#002147] text-[#EFEFF6] font-bold px-4 rounded-full group relative cursor-pointer overflow-hidden leading-6 w-[180px]'>
                   <span className='inline-block p-1 transition duration-500 ease-out group-hover:-translate-y-[120%]    font-sans font-medium py-3 px-4'>What We Offer</span>
                   <span className='absolute left-[10%] inline-block translate-y-[120%] rotate-12 p-1 transition duration-500 ease-out group-hover:translate-y-0 group-hover:rotate-0 font-sans font-medium text-white text-center py-3 px-4'>What We Offer</span>
                   </div></Link>
-                {/* <Link href='/what-we-offer'><MenuButton className="">What We offer</MenuButton></Link> */}
               </div>
             </div>
-            {/* <div className='bg-opacity-50'>
-                
-            <Image className='' src='/assets/new-design/doctor_img.png'  objectFit='cover' width={1500} height={300} alt='home doc' />
-            </div> */}
 
           </section>
           <section ref={el => sectionsRef.current[0] = el} className='max-w-screen py-8 '>

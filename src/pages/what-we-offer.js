@@ -114,10 +114,10 @@ function WhatWeOffer() {
                             </div>
                             <div className='flex flex-col lg:items-end md:w-[100%] mx-4 md:ml-20'>
 
-                                <p className='my-3 text-center xl:text-2xl lg:w-[35vw] bg-gradient-to-r from-[#D6F6F6] to-slate-50  font-semibold p-2 pl-2 rounded-full text-black'>IDIs</p>
-                                <p className='my-3 text-center xl:text-2xl lg:w-[35vw] bg-gradient-to-r from-[#D6F6F6] to-slate-50  font-semibold p-2 pl-2 rounded-full text-black'>TDIs</p>
-                                <p className='my-3 text-center xl:text-2xl lg:w-[35vw] bg-gradient-to-r from-[#D6F6F6] to-slate-50  font-semibold p-2 pl-2 rounded-full text-black'>Moderation</p>
-                                <p className='my-3 text-center xl:text-2xl lg:w-[35vw] bg-gradient-to-r from-[#D6F6F6] to-slate-50  font-semibold p-2 pl-2 rounded-full text-black'>KOLs</p>
+                                <p className='my-3 border border-blue-950 text-center xl:text-2xl lg:w-[35vw] bg-[#D6F6F6]  font-semibold p-2 pl-2 rounded-full text-black'>IDIs</p>
+                                <p className='my-3 border border-blue-950 text-center xl:text-2xl lg:w-[35vw] bg-[#D6F6F6]  font-semibold p-2 pl-2 rounded-full text-black'>TDIs</p>
+                                <p className='my-3 border border-blue-950 text-center xl:text-2xl lg:w-[35vw] bg-[#D6F6F6]  font-semibold p-2 pl-2 rounded-full text-black'>Moderation</p>
+                                <p className='my-3 border border-blue-950 text-center xl:text-2xl lg:w-[35vw] bg-[#D6F6F6]  font-semibold p-2 pl-2 rounded-full text-black'>KOLs</p>
                             </div>
                         </div>
                     </section>
@@ -130,9 +130,9 @@ function WhatWeOffer() {
                             </div>
                             <div className='flex flex-col lg:items-end md:w-[100%] mx-4 md:ml-20'>
 
-                                <p className='my-3 text-center xl:text-2xl lg:w-[35vw] bg-gradient-to-r from-[#D6F6F6] to-slate-50  font-semibold p-2 pl-2 rounded-full text-black'>Online top-ups and full service projects</p>
-                                <p className='my-3 text-center xl:text-2xl lg:w-[35vw] bg-gradient-to-r from-[#D6F6F6] to-slate-50  font-semibold p-2 pl-2 rounded-full text-black'>Trackers</p>
-                                <p className='my-3 text-center xl:text-2xl lg:w-[35vw] bg-gradient-to-r from-[#D6F6F6] to-slate-50  font-semibold p-2 pl-2 rounded-full text-black'>PRFs</p>
+                                <p className='my-3 border border-blue-950 text-center xl:text-2xl lg:w-[35vw] bg-[#D6F6F6]  font-semibold p-2 pl-2 rounded-full text-black'>Online top-ups and full service projects</p>
+                                <p className='my-3 border border-blue-950 text-center xl:text-2xl lg:w-[35vw] bg-[#D6F6F6]  font-semibold p-2 pl-2 rounded-full text-black'>Trackers</p>
+                                <p className='my-3 border border-blue-950 text-center xl:text-2xl lg:w-[35vw] bg-[#D6F6F6]  font-semibold p-2 pl-2 rounded-full text-black'>PRFs</p>
                                 {/* <p className='my-4 bg-[#abf0f0] font-semibold p-2 pl-2 rounded-full text-black'>KOLs</p> */}
                             </div>
                         </div>
@@ -158,12 +158,12 @@ function WhatWeOffer() {
                     </section>
                 </div>
 
-                <section ref={el => sectionsRef.current[4] = el} className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 text-center text-lg py-8'>
+                <section ref={el => sectionsRef.current[4] = el} className='bg-[#D6F6F6] to-slate-50 text-center text-lg py-8'>
                     <h3 className='font-bold text-4xl pt-6 text-[#002147]'>Panel Details:</h3>
                     <p className='px-3 py-10 md:mx-36 font-semibold text-slate-900'>Give your business research the advantage of ease and efficacy with first party, quality panels. Benefit from multi-dimensional reach with our expansive online panel community across North America, Europe countries, Soon we will have presence in South American and APAC region.</p>
                 </section>
 
-                <section ref={el => sectionsRef.current[5] = el} className='bg-white'>
+                <section ref={el => sectionsRef.current[5] = el} className=''>
                     <h3 className='text-center text-4xl font-bold py-4 text-[#002147]'>Condition Covered:</h3>
                     <div className='md:flex md:justify-between xl:mx-28'>
                         <ul className='pl-6 list-disc  font-semibold leading-relaxed text-lg md:py-4 md:pl-16 md:pr-6'>
@@ -191,7 +191,7 @@ function WhatWeOffer() {
                     </div>
                 </section>
 
-                <section ref={el => sectionsRef.current[6] = el} className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 '>
+                <section ref={el => sectionsRef.current[6] = el} className='bg-[#D6F6F6] to-slate-50 '>
                     <h3 className='text-center font-bold text-4xl py-6 text-[#002147]'>Panel Quality Measures:</h3>
                     <h4 className='text-[#002147] text-center text-2xl font-bold '>Quality is managed and ensured via 5-step panel authentication process.</h4>
                     <div className='flex flex-col justify-center items-center pl-6'>

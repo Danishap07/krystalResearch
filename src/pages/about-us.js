@@ -75,7 +75,7 @@ function AboutUs() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
     <div>
-      <div ref={textRef} className='py-10 bg-gradient-to-r from-[#D6F6F6] to-slate-50 text-center'>
+      <div ref={textRef} className='py-10 bg-[#D6F6F6]  text-center'>
         <div className='  md:mx-[25%] mx-4 font-bold'>
           <h3 className='text-[#002147] text-5xl'>
             Krystal Research Solutions:
@@ -90,32 +90,32 @@ function AboutUs() {
         </div>
 
       </div>
-      <section ref={el => sectionsRef.current[0] = el} className=' pb-10'>
+      <section ref={el => sectionsRef.current[0] = el} className='pb-10 space-y-4'>
         <h3 className='text-4xl font-bold text-center py-6 text-[#002147] '>WHY KRS?</h3>
-        <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-6 rounded-full md:mx-32'>
-          <p className='text-center py-2 px-2 mt-3 font-semibold text-black'>We are passionate about healthcare market research.</p>
+        <div className='bg-[#D6F6F6] border border-black mx-6 rounded-full md:mx-32 '>
+          <p className='text-center py-2 px-2  font-semibold text-black'>We are passionate about healthcare market research.</p>
         </div>
-        <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-6 rounded-full md:mx-32'>
-          <p className='text-center py-2 px-2 mt-3 font-semibold text-black'>We have a highly experienced and skilled team.</p>
+        <div className='bg-[#D6F6F6] border border-blue-950 mx-6 rounded-full md:mx-32'>
+          <p className='text-center py-2 px-2  font-semibold text-black'>We have a highly experienced and skilled team.</p>
         </div>
-        <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-6 rounded-full md:mx-32'>
-          <p className='text-center py-2 px-2 mt-3 font-semibold text-black'>We offer a wide range of qualitative and quantitative research services.</p>
+        <div className='bg-[#D6F6F6] border border-blue-950 mx-6 rounded-full md:mx-32'>
+          <p className='text-center py-2 px-2  font-semibold text-black'>We offer a wide range of qualitative and quantitative research services.</p>
         </div>
-        <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-6 rounded-full md:mx-32'>
-          <p className='text-center py-2 px-2 mt-3 font-semibold text-black'>We have a growing healthcare panel across North America, Europe, South America, and APAC.</p>
+        <div className='bg-[#D6F6F6] border border-blue-950 mx-6 rounded-full md:mx-32'>
+          <p className='text-center py-2 px-2  font-semibold text-black'>We have a growing healthcare panel across North America, Europe, South America, and APAC.</p>
         </div>
-        <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-6 rounded-full md:mx-32'>
-          <p className='text-center py-2 px-2 mt-3 font-semibold text-black'>We are committed to providing our clients with quality, actionable data.</p>
+        <div className='bg-[#D6F6F6] border border-blue-950 mx-6 rounded-full md:mx-32'>
+          <p className='text-center py-2 px-2  font-semibold text-black'>We are committed to providing our clients with quality, actionable data.</p>
         </div>
       </section>
       <section ref={el => sectionsRef.current[1] = el} className='py-6  text-center'>
         <h3 className='text-4xl font-bold text-center  py-6 uppercase text-[#002147]'>How can we help you?</h3>
         <div className='md:flex justify-between md:mx-16'>
-          <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-16 my-4 py-4 rounded-2xl space-y-3'>
+          <div className='bg-[#D6F6F6] border border-blue-950 mx-16 my-4 py-4 rounded-2xl space-y-3'>
             <h6 className='leading-6 font-bold text-xl'>Make more Informed Decisions:</h6>
             <p className='md:mx-12 mx-4 font-semibold text-black'>Our research insights can help you understand your target market, identify opportunities, and make better strategic decisions.</p>
           </div>
-          <div className='bg-gradient-to-r from-[#D6F6F6] to-slate-50 mx-16 my-4 py-4 rounded-2xl space-y-3'>
+          <div className='bg-[#D6F6F6] border border-blue-950 mx-16 my-4 py-4 rounded-2xl space-y-3'>
             <h6 className='leading-6 font-bold text-xl '>Achieve Superior Results:</h6>
             <p className='md:mx-12 mx-4 font-semibold text-black'>Our research can help you develop and launch new products and services, improve your marketing campaigns, and expand into new markets.</p>
           </div>
